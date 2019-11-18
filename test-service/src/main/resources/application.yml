@@ -11,7 +11,7 @@ spring:
     name: test-service
     proxy-target-class: true
   datasource:
-    driver-class-name: com.mysql.jdbc.Driver
+    driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
     password: admin
     url: jdbc:mysql://192.168.1.103:3306/test?useSSL=false&allowMultiQueries=true&useUnicode=true&characterEncoding=UTF8&serverTimezone=UTC
