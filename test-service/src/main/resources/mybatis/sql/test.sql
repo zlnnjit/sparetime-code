@@ -1,4 +1,4 @@
-USE service1;
+USE test;
 
 DROP TABLE IF EXISTS user;
 DROP TABLE IF EXISTS user_role;

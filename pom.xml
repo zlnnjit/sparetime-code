@@ -12,12 +12,12 @@
     </parent>
 
     <groupId>top.bcoder</groupId>
-    <artifactId>spring-demo</artifactId>
+    <artifactId>sparetime-code</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
 
     <modules>
-        <module>service1</module>
+        <module>test-service</module>
         <module>rockermq-producer</module>
         <module>rocketmq-consumer</module>
         <module>common</module>

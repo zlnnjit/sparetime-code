@@ -7,7 +7,7 @@ import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
 @ComponentScan("top.bcoder")
-@MapperScan("top.bcoder.server.dao")
+@MapperScan("top.bcoder")
 public class RocketmqProducerApplication {
     public static void main(String[] args) {
         SpringApplication.run(RocketmqProducerApplication.class, args);

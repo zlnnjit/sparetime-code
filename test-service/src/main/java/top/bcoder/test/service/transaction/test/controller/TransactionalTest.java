@@ -1,14 +1,14 @@
-package top.bcoder.test.service.controller;
+package top.bcoder.test.service.transaction.test.controller;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
-import top.bcoder.test.service.bean.User;
-import top.bcoder.test.service.bean.UserRole;
-import top.bcoder.test.service.service.UserRoleService;
-import top.bcoder.test.service.service.UserService;
+import top.bcoder.test.service.transaction.test.bean.User;
+import top.bcoder.test.service.transaction.test.bean.UserRole;
+import top.bcoder.test.service.transaction.test.service.UserRoleService;
+import top.bcoder.test.service.transaction.test.service.UserService;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest

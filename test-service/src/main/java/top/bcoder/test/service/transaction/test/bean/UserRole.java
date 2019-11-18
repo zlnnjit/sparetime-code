@@ -1,4 +1,4 @@
-package top.bcoder.test.service.bean;
+package top.bcoder.test.service.transaction.test.bean;
 
 import lombok.Data;
 

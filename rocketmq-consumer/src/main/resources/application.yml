@@ -1,5 +1,5 @@
 server:
-  port: 10000
+  port: 10002
   servlet:
     context-path: /
   tomcat:
@@ -8,7 +8,8 @@ mybatis:
   config‐location: classpath:mybatis/mybatis-config.xml
 spring:
   application:
-    name: test-service
+    name: rockermq-consumer
+  aop:
     proxy-target-class: true
   datasource:
     driver-class-name: com.mysql.jdbc.Driver

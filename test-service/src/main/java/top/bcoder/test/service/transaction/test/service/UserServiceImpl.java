@@ -1,11 +1,11 @@
-package top.bcoder.test.service.service;
+package top.bcoder.test.service.transaction.test.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
-import top.bcoder.test.service.bean.User;
-import top.bcoder.test.service.dao.UserMapper;
+import top.bcoder.test.service.transaction.test.bean.User;
+import top.bcoder.test.service.transaction.test.dao.UserMapper;
 
 /**
  * @author zln

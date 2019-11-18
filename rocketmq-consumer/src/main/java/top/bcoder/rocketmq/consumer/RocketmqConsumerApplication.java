@@ -1,24 +1,15 @@
-/*
- * Copyright © 2019 fnii and others.  All rights reserved.
- */
-
-package top.bcoder.test.service;
+package top.bcoder.rocketmq.consumer;
 
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 
-/**
- * @author zln
- * @date 2019/7/23
- */
 @SpringBootApplication
 @ComponentScan("top.bcoder")
-@MapperScan("top.bcoder")
-public class TestServiceApplication {
+@MapperScan("top.bcoder.")
+public class RocketmqConsumerApplication {
     public static void main(String[] args) {
-        SpringApplication.run(TestServiceApplication.class, args);
+        SpringApplication.run(RocketmqConsumerApplication.class, args);
     }
-
 }

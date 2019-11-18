@@ -1,8 +1,8 @@
-package top.bcoder.test.service.dao;
+package top.bcoder.test.service.transaction.test.dao;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import org.springframework.stereotype.Repository;
-import top.bcoder.test.service.bean.UserRole;
+import top.bcoder.test.service.transaction.test.bean.UserRole;
 
 /**
  * @author zln
