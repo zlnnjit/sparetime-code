@@ -18,29 +18,12 @@ import java.math.BigDecimal;
 @Slf4j
 @SpringBootApplication
 @ComponentScan("top.bcoder")
-//@MapperScan("top.bcoder")
-public class RocketmqProducerApplication  implements CommandLineRunner {
-    @Resource
-    private RocketMQTemplate rocketMQTemplate;
+@MapperScan("top.bcoder.rocketmq.producer.dao")
+public class RocketmqProducerApplication{
+
 
     public static void main(String[] args){
         SpringApplication.run(RocketmqProducerApplication.class, args);
     }
 
-    public void run(String... args) throws Exception {
-        log.error("===============");
-//        rocketMQTemplate.convertAndSend("test-topic-1", "Hello, World!");
-//        rocketMQTemplate.send("test-topic-1", MessageBuilder.withPayload("Hello, World! I'm from spring message").build());
-//        rocketMQTemplate.convertAndSend("test-topic-2", new OrderPaidEvent("T_001", new BigDecimal("88.00")));
-
-//        rocketMQTemplate.destroy(); // notes:  once rocketMQTemplate be destroyed, you can not send any message again with this rocketMQTemplate
-    }
-
-    @Data
-    @AllArgsConstructor
-    public class OrderPaidEvent implements Serializable {
-        private String orderId;
-
-        private BigDecimal paidMoney;
-    }
 }

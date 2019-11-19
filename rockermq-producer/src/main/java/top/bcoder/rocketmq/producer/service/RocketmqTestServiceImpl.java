@@ -1,15 +1,7 @@
 package top.bcoder.rocketmq.producer.service;
 
-import com.google.common.collect.Lists;
 import lombok.extern.slf4j.Slf4j;
-import org.apache.rocketmq.spring.core.RocketMQTemplate;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.messaging.support.MessageBuilder;
 import org.springframework.stereotype.Service;
-import top.bcoder.common.util.util.JacksonUtils;
-import top.bcoder.rocketmq.producer.bean.User;
-
-import java.util.List;
 
 /**
  * @author zln

@@ -22,24 +22,5 @@ import java.util.List;
 @Slf4j
 public class TestRocketmqController {
 
-    private final RocketMQTemplate rocketMQTemplate;
-
-    @Autowired
-    public TestRocketmqController(RocketMQTemplate rocketMQTemplate) {
-        this.rocketMQTemplate = rocketMQTemplate;
-    }
-
-    @GetMapping(name = "/test1")
-    public Object testSendMessageBasic(@RequestParam String content) {
-        log.info("rocketMQTemplate:", JacksonUtils.bean2Json(rocketMQTemplate));
-        rocketMQTemplate.convertAndSend("test-topic-1", "Hello, World!");
-        rocketMQTemplate.send("test-topic-1", MessageBuilder.withPayload("Hello, World! I'm from spring message").build());
-        List<User> users = Lists.newArrayList();
-        users.add(User.builder().age(11).name("同学A").content("我是同学A").build());
-        users.add(User.builder().age(11).name("同学B").content("我是同学B").build());
-        users.add(User.builder().age(11).name("同学C").content("我是同学C").build());
-        rocketMQTemplate.convertAndSend("test-topic-2", users);
-        return null;
-    }
 
 }

@@ -61,10 +61,6 @@ spring:
   jackson:
     default-property-inclusion: non_null
 
-rocketmq:
-  name-server: 192.168.1.103:9876
-  producer:
-    group: zln
 
 mybatis-plus:
   config-location: classpath:mybatis/mybatis-config.xml

@@ -1,4 +1,2 @@
 rocketmq:
   name-server: 192.168.1.103:9876
-  producer:
-    group: zln
