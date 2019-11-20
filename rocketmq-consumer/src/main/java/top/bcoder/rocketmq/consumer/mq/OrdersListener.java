@@ -17,6 +17,6 @@ public class OrdersListener implements RocketMQListener<String>{
 
     @Override
     public void onMessage(String s) {
-        log.info("收到订单信息,进行入库，订单信息为：{}", s);
+        log.info("收到订单信息，清除当前购物车信息。订单信息为：{}", s);
     }
 }
