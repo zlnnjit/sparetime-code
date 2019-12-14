@@ -8,6 +8,7 @@
     + 公共的util
 + test-service
     + spring事务的传播机制的测试代码
+    + CAS/FAA 测试模拟转账
     
     
 
