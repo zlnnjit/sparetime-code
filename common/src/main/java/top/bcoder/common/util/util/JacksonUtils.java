@@ -18,7 +18,7 @@ import java.util.concurrent.atomic.AtomicReference;
  * @date 2019/7/12
  */
 public class JacksonUtils {
-    private static final AtomicReference<ObjectMapper> MAPPER = new AtomicReference<>(new ObjectMapper());
+    private static final AtomicReference<ObjectMapper> MAPPER = new AtomicReference(new ObjectMapper());
 
     static {
         MAPPER.get().configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
