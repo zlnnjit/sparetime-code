@@ -9,6 +9,11 @@
 + test-service
     + spring事务的传播机制的测试代码
     + CAS/FAA 测试模拟转账
+	+ juc测试代码
++ rockermq-producer
+    + rocketmq生产者demo代码
++ rocketmq-consumer
+    + rocketmq消费demo代码	
     
     
 
